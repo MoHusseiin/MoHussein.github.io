@@ -54,6 +54,12 @@ thead th {
     font-weight: bold;
     text-align:center;
 }
+col{
+    width: 25%;
+}
+.nameCol{
+    width: 50%;
+}
 td {
     font-size: 11px;
     line-height: 25px;

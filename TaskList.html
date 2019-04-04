@@ -8,7 +8,7 @@
 <body>
     <header>Task List</header>
     <div id="modifyTask">
-        <form action="#tblTasks" id="update">
+        <form action="#tblTasks">
             <div>
                 <label>Task</label>
                 <br/>
@@ -27,7 +27,6 @@
                     <option>Personal</option>
                     <option>Bussiness</option>
                     <option>Work</option>
-                    <option>Home</option>
                 </select>
             </div>
             <div>
@@ -39,9 +38,9 @@
     <div>
         <table id="tblTasks">
             <colgroup>
-                <col width="50%">
-                <col width="25%">
-                <col width="25%">
+                <col class="nameCol"/>
+                <col/>
+                <col/>
             </colgroup>
             <thead>
                 <tr>
