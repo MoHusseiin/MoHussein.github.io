@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="TaskList.css"/>
+</head>
+<body>
+    <header>Task List</header>
+    <div id="modifyTask">
+        <form action="#tblTasks" id="update">
+            <div>
+                <label>Task</label>
+                <br/>
+                <input type="text" placeholder="Breakfast At Titiarry" name="myTask"/>
+            </div>
+
+            <div>
+                <label>Required by</label>
+                <br/>
+                <input type="date" />
+            </div>
+            <div>
+                <label>Category</label>
+                <br/>
+                <select name="category" class="category">
+                    <option>Personal</option>
+                    <option>Bussiness</option>
+                    <option>Work</option>
+                    <option>Home</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Save Task"/>
+                <input type="reset" value="Clear Task"/>
+            </div>
+        </form>
+    </div>
+    <div>
+        <table id="tblTasks">
+            <colgroup>
+                <col width="50%">
+                <col width="25%">
+                <col width="25%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Due</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Return library books</td>
+                    <td><time datetime="2013-10-14">2013-10-14</time></td>
+                    <td>Personal</td>
+                </tr>
+                <tr class="even">
+                    <td>Perform project demo to stakeholders</td>
+                    <td><time datetime="2013-10-14">2013-10-14</time></td>
+                    <td>Work</td>
+                </tr>
+                <tr>
+                    <td>Meet friends for dinner</td>
+                    <td><time datetime="2013-10-14">2013-10-14</time></td>
+                    <td>Personal</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#tblTasks" id="add">
+            <div>
+                <input type="submit" value="Add Task"/>
+            </div>
+        </form>
+    </div>
+    <footer>You have 3 tasks</footer>
+</body>
+</html>
