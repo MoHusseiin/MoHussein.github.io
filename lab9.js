@@ -1,7 +1,6 @@
 $(function(){
     $("#booking").submit(function (event) {
 
-        event.preventDefault();
         isSubmit = true;
         const username = $("#username").val();
         const street = $("#street").val();
@@ -55,8 +54,8 @@ $(function(){
             isSubmit = false;
         }
 
-        if(isSubmit){
-            $(this).submit();
+        if(!isSubmit){
+            event.preventDefault();
         }
 
     });
